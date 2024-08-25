@@ -15,6 +15,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- ======== FONTAWESOME KIT ======== -->
+    <script src="https://kit.fontawesome.com/44dfdbeab1.js" crossorigin="anonymous"></script>
+
     <style>
         .font-manrope{
             font-family: "Manrope", sans-serif;
@@ -27,7 +30,22 @@
           extend: {
             colors: {
               clifford: '#da373d',
-              'rinterio-primary': 'rgba(171, 239, 95)',
+
+              // === COMMON STYLE OF FIGMA ===
+              'bg-color-full': 'rgba(171, 239, 95)',
+              'bg-color-o-2': 'rgba(171, 239, 95, 0.2)',
+
+              'txt-color-73': 'rgb(73, 73, 73)',
+              'txt-color-33': 'rgb(33, 33, 33)',
+              'txt-color-115': 'rgb(115, 115, 115)',
+              'txt-color-28': 'rgb(28, 28, 28)',
+
+              'card-bg-1': 'rgb(231, 193, 211)',
+              'card-bg-2': 'rgb(239, 218, 110)',
+              'card-bg-3': 'rgb(164, 218, 195)',
+              'card-bg-4': 'rgb(119, 170, 234)',
+
+
             }
           }
         }
@@ -36,23 +54,32 @@
 </head>
 <body class="font-manrope">
     <!-- ======== HEADER SECTION ======== -->
-    <header class="md:container mx-auto">
+    <header class="md:container mx-auto bg-gradient-to-t from-white to-white/0">
         <nav>
           <div class="navbar bg-base-100">
-            <div class="flex-1">
-              <a class="font-bold text-xl">Rinterio</a>
+            <div class="navbar-start">
+              <i class="fa-solid fa-arrow-right bg-rinterio-primary w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2 bg-bg-color-full"></i>
+              <a class="font-extrabold text-2xl">Rinterio</a>
             </div>
+
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
+                <li><a class="text-txt-color-73 text-base font-bold">Home</a></li>
+                <li><a class="text-txt-color-115 text-base">Services</a></li>
+                <li><a class="text-txt-color-115 text-base">Portfolio</a></li>
+                <li><a class="text-txt-color-115 text-base">Blogs</a></li>
+                <li><a class="text-txt-color-115 text-base">Contact Us</a></li>
               </ul>
             </div>
-            <div class="">
-              <a class="btn bg-rinterio-primary">Book Consult</a>
+
+            <div class="navbar-end gap-4">
+              <i class="fa-solid fa-magnifying-glass flex justify-center items-center w-[30px] h-[30px] bg-white border-[0.09rem] rounded-full"></i>
+              <i class="fa-solid fa-cart-shopping flex justify-center items-center w-[30px] h-[28px] text-[12px] bg-white rounded-full border-[0.09rem] border-[rgb(233, 233, 233)]"></i>
+
+              <div class="flex justify-center items-center bg-bg-color-full rounded-full ">
+                <a class="btn bg-transparent border-none rounded-full hover:bg-bg-color-full text-txt-color-28 font-bold text-lg">Book Consult</a>
+                <i class="fa-solid fa-arrow-right bg-rinterio-primary w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full bg-black text-white"></i>
+              </div>
             </div>
           </div>
         </nav>
