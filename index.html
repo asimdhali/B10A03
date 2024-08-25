@@ -34,6 +34,7 @@
               // === COMMON STYLE OF FIGMA ===
               'bg-color-full': 'rgba(171, 239, 95)',
               'bg-color-o-2': 'rgba(171, 239, 95, 0.2)',
+              'bg-color-o-5': 'rgba(171, 239, 95, 0.5)',
 
               'txt-color-73': 'rgb(73, 73, 73)',
               'txt-color-33': 'rgb(33, 33, 33)',
@@ -53,46 +54,65 @@
     </script>
 </head>
 <body class="font-manrope">
-    <!-- ======== HEADER SECTION ======== -->
-    <header class="md:container mx-auto bg-gradient-to-t from-white to-white/0">
-        <nav>
-          <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <i class="fa-solid fa-arrow-right bg-rinterio-primary w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2 bg-bg-color-full"></i>
-              <a class="font-extrabold text-2xl">Rinterio</a>
-            </div>
+  <!-- ======== HEADER SECTION ======== -->
+  <header class="md:container mx-auto bg-gradient-to-t from-white to-white/0">
+    <nav>
+      <!-- ==========UPPER NAV STARTS ======== -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <i
+            class="fa-solid fa-arrow-right bg-rinterio-primary w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2 bg-bg-color-full"></i>
+          <a class="font-extrabold text-2xl">Rinterio</a>
+        </div>
 
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a class="text-txt-color-73 text-base font-bold">Home</a></li>
-                <li><a class="text-txt-color-115 text-base">Services</a></li>
-                <li><a class="text-txt-color-115 text-base">Portfolio</a></li>
-                <li><a class="text-txt-color-115 text-base">Blogs</a></li>
-                <li><a class="text-txt-color-115 text-base">Contact Us</a></li>
-              </ul>
-            </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-txt-color-73 text-base font-bold">Home</a></li>
+            <li><a class="text-txt-color-115 text-base">Services</a></li>
+            <li><a class="text-txt-color-115 text-base">Portfolio</a></li>
+            <li><a class="text-txt-color-115 text-base">Blogs</a></li>
+            <li><a class="text-txt-color-115 text-base">Contact Us</a></li>
+          </ul>
+        </div>
 
-            <div class="navbar-end gap-4">
-              <i class="fa-solid fa-magnifying-glass flex justify-center items-center w-[30px] h-[30px] bg-white border-[0.09rem] rounded-full"></i>
-              <i class="fa-solid fa-cart-shopping flex justify-center items-center w-[30px] h-[28px] text-[12px] bg-white rounded-full border-[0.09rem] border-[rgb(233, 233, 233)]"></i>
+        <div class="navbar-end">
+          <button
+            class="flex justify-center items-center border-bg-color-full rounded-full bg-bg-color-full gap-3 text-xl font-bold pl-3 pt-1 pb-1">
+            Book Consult
+            <i
+              class="fa-solid fa-arrow-right bg-black text-white w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2"></i>
+          </button>
+        </div>
+      </div>
+      <!-- ========= END OF UPPER NAV ========== -->
 
-              <div class="flex justify-center items-center bg-bg-color-full rounded-full ">
-                <a class="btn bg-transparent border-none rounded-full hover:bg-bg-color-full text-txt-color-28 font-bold text-lg">Book Consult</a>
-                <i class="fa-solid fa-arrow-right bg-rinterio-primary w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full bg-black text-white"></i>
-              </div>
-            </div>
-          </div>
-        </nav>
+      <!-- ========= BANNER NAV STARTS ========= -->
+      <div class="flex flex-col items-center text-center mt-14">
+        <img class="mb-6" src="./assets/banner.png" alt="">
+        <h1 class="text-[4rem] font-bold text-txt-color-33 mb-8">A barn house of this design has a <br> striking
+          appearance</h1>
+        <p class="text-base text-txt-color-115 mb-8">The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with
+          natural light.</p>
+        <button
+          class="flex justify-center items-center box-border border-[0.06rem] border-bg-color-full rounded-full bg-bg-color-o-5 py-3 px-6 gap-3 font-semibold text-lg">
+          View Details
+          <i
+            class="fa-solid fa-arrow-right bg-rinterio-primary w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2 bg-bg-color-full"></i>
+        </button>
+      </div>
+      <!-- ======= BANNER NAV ENDS ======== -->
+    </nav>
 
-    </header>
-    <!-- ======== MAIN SECTION ======== -->
-     <main>
-     </main>
+  </header>
+  <!-- ======== MAIN SECTION ======== -->
+  <main>
+  </main>
 
-    <!-- ======== FOOTER SECTION ======== -->
-     <footer>
+  <!-- ======== FOOTER SECTION ======== -->
+  <footer>
 
-     </footer>
-    <!-- ================ -->
+  </footer>
+  <!-- ================ -->
 </body>
 </html>
