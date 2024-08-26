@@ -58,14 +58,14 @@
   <header class="md:container mx-auto bg-gradient-to-t from-white to-white/0">
     <nav>
       <!-- ==========UPPER NAV STARTS ======== -->
-      <div class="navbar bg-base-100">
+      <div class="navbar max-sm:flex max-sm:justify-between">
         <div class="navbar-start">
           <i
             class="fa-solid fa-arrow-right bg-rinterio-primary w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2 bg-bg-color-full"></i>
           <a class="font-extrabold text-2xl">Rinterio</a>
         </div>
 
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center lg:flex hidden">
           <ul class="menu menu-horizontal px-1">
             <li><a class="text-txt-color-73 text-base font-bold">Home</a></li>
             <li><a class="text-txt-color-115 text-base">Services</a></li>
@@ -75,13 +75,19 @@
           </ul>
         </div>
 
-        <div class="navbar-end">
+        <div class="navbar-end gap-2 max-sm:hidden flex justify-center items-center">
+          <i class="fa-solid text-xl fa-magnifying-glass border-[0.06rem] border-[rgb(233,233,233)]  rounded-full px-3 py-2"></i>
+          <i class="fa-solid fa-cart-shopping border-[0.06rem] border-[rgb(233,233,233)]  rounded-full px-3 py-3"></i>
           <button
             class="flex justify-center items-center border-bg-color-full rounded-full bg-bg-color-full gap-3 text-xl font-bold pl-3 pt-1 pb-1">
             Book Consult
             <i
               class="fa-solid fa-arrow-right bg-black text-white w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2"></i>
           </button>
+        </div>
+
+        <div class="max-sm:flex lg:hidden">
+          <i class="fa-solid fa-bars font-bold text-2xl"></i>
         </div>
       </div>
       <!-- ========= END OF UPPER NAV ========== -->
