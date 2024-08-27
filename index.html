@@ -92,6 +92,7 @@
         <div class="navbar-end gap-2 max-sm:hidden flex justify-center items-center">
           <i class="fa-solid text-xl fa-magnifying-glass border-[0.06rem] border-[rgb(233,233,233)]  rounded-full px-3 py-2"></i>
           <i class="fa-solid fa-cart-shopping border-[0.06rem] border-[rgb(233,233,233)]  rounded-full px-3 py-3"></i>
+
           <div class="flex flex-row justify-center items-center ">
             <a
               class="text-xl btn border-none bg-bg-color-full rounded-3xl font-bold hover:bg-lime-200 hover:scale-105 transition-all duration-300 flex items-center justify-center">Book
@@ -221,64 +222,67 @@
        </div>
 
        <!-- ------ GRID COMPONENT STARTS ------ -->
-        <div class="">
-          <!-- -------- GRID 1 ------ -->
-          <div class="grid grid-cols-3 rounded-2xl p-5 gap-y-6 gap-4 justify-center items-center">
-            <div class="col-span-2 flex gap-4 border-2 rounded-2xl p-5">
-              <div class="border-dashed border-[0.13rem] border-txt-color-33 border-opacity-30">
-                <img class="max-w-[16rem] " src="./assets/img1.png" alt="">
-              </div>
-              <div>
-                <h2 class="text-xl font-bold mb-4">Commercial</h2>
-                <p class="text-base text-txt-color-73 mb-4">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with
-                  its blend of rustic charm and modern .</p>
-                <button
-                  class="flex justify-center items-center box-border font-semibold text-lg gap-2">
-                  View Details
-                  <i
-                    class="fa-solid fa-arrow-right w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2 bg-bg-color-full"></i>
-                </button>
-              </div>
-            </div>
+       <div class="mt-10 grid grid-cols-12 items-center  justify-center gap-5">
+         <div class="lg:col-span-8">
+           <div class="card md:items-center md:flex-row  p-5 gap-7 border">
+             <img src="./assets/img1.png"  class="rounded-2xl" />
+             <div>
+               <h2 class="font-extrabold text-2xl">Commercial</h2>
+               <p class="text-base text-txt-color-73">Captivates with its blend of rustic charm and
+                 modern. The barn house captivates with its blend of rustic charm with its</p>
+               <div class="card-actions mt-5">
+                 <div class="flex items-center justify-center">
+                   <a class="text-2xl font-bold ">View Details</a>
+                   <div class="w-10 h-10 rounded-full bg-bg-color-full flex items-center justify-center ml-2">
+                     <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col-span-4">
+           <div class="card flex-row p-6 border  md:h-[228px]">
+             <img src="./assets/img2.png" class="rounded-2xl w-full h-full" />
+           </div>
+         </div>
+         <div class="col-span-3 order-5">
+           <div class="card flex-row p-6  border md:h-[228px]">
+             <img src="./assets/img5.png" class="rounded-2xl w-full" />
+           </div>
+         </div>
+         <div class="col-span-12 md:col-span-12 lg:col-span-6 order-4 ">
+           <div class="card flex-col md:flex-row p-6 gap-6 border ">
+             <img src="./assets/img4.png"  class="rounded-2xl" />
 
-            <div class="border-2 rounded-2xl p-5">
-              <figure class="border-dashed border-[0.13rem] border-txt-color-33 border-opacity-30">
-                <img class="w-full h-full object-cover" src="./assets/img2.png" alt="">
-              </figure>
-            </div>
-
-            <!-- -------- SECOND ROW ------ -->
-            <div class="col-span-3 grid grid-cols-12 gap-4 justify-center items-center">
-              <div class="col-span-2 border-2 rounded-2xl p-5">
-                <figure class="border-dashed border-[0.13rem] border-txt-color-33 border-opacity-30">
-                  <img class="max-w-[13rem]" src="./assets/img3.png" alt="">
-                </figure>
-              </div>
-
-              <div class="flex gap-4 col-span-6 border-2 rounded-2xl p5">
-                <div class="border-dashed border-[0.13rem] border-txt-color-33 border-opacity-30">
-                  <img class="max-w-[16rem]" src="./assets/img4.png" alt="">
-                </div>
-                <div>
-                  <h2 class="text-xl font-bold mb-4">Commercial</h2>
-                  <p class="text-base text-txt-color-73 mb-4">The barn house captivates with its blend of rustic charm
-                    and
-                    modern. The barn house captivates with
-                    its blend of rustic charm and modern .</p>
-                  <button class="flex justify-center items-center box-border font-semibold text-lg gap-2">
-                    View Details
-                    <i
-                      class="fa-solid fa-arrow-right w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2 bg-bg-color-full"></i>
-                  </button>
-                </div>
-              </div>
-
-              <div class="col-span-4">
-                <img src="./assets/img5.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
+             <div class="">
+               <h2 class="font-extrabold text-2xl">Commercial</h2>
+               <p class="font-medium  mt-4 lg:h-[50px] xl:h-fit">The barn house captivates
+                 with its blend of rustic charm and
+                 modern.</p>
+               <div class="card-actions mt-5">
+                 <div class="flex items-center justify-center">
+                   <a class="text-lg font-bold ">View Details</a>
+                   <div class="w-8 h-8 rounded-full flex items-center justify-center ml-2">
+                     <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class=" lg:col-span-3  lg:order-3">
+           <div class="card flex-row p-6 border  md:h-[228px]">
+             <img src="./assets/img3.png"  class="rounded-2xl w-full" />
+           </div>
+         </div>
+         <div class="lg:hidden col-span-12 md:col-span-6  lg:col-span-3 order-6">
+           <div class="card flex-row p-6  border  md:h-[228px]">
+             <img src="./assets/img5.png" class="rounded-2xl w-full" />
+           </div>
+         </div>
+       </div>
+        
        <!-- ------ GRID COMPONENT ENDS ------ -->
      </section>
     <!-- ===== LATEST PORTFOLIO ENS ===== -->
@@ -301,13 +305,13 @@
            class="container mx-auto grid grid-cols-1 lg:grid-cols-2 place-items-center place-content-center gap-2 lg:w-[970px]">
            <input
              class="block w-full rounded-full border-0 py-2 pl-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset"
-             type="text" placeholder="First Name">
+             type="text" placeholder="First Name*">
            <input type="text"
-             class="block w-full rounded-full border-0 py-2 pl-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset">
+             class="block w-full rounded-full border-0 py-2 pl-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset" placeholder="Last Name*">
            <input type="text"
-             class="block w-full rounded-full border-0 py-2 pl-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset">
+             class="block w-full rounded-full border-0 py-2 pl-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset" placeholder="Phone Number*">
            <input type="text"
-             class="block w-full rounded-full border-0 py-2 pl-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset">
+             class="block w-full rounded-full border-0 py-2 pl-7 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset" placeholder="Email Number*">
 
            <textarea
              class="block lg:col-span-2 w-full rounded-3xl border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inse name="
@@ -315,7 +319,7 @@
 
            <button class="text-2xl font-bold lg:col-span-2 bg-bg-color-full py-3 my-3 w-full rounded-full mt-6 mb-12">
              Send Mail
-             <i class="fa-solid fa-circle-arrow-up text-black px-3 rotate-45 text-xl"></i>
+             <i class="fa-solid fa-circle-arrow-up text-black px-3 rotate-45 text-3xl"></i>
            </button>
          </form>
        </div>
@@ -328,11 +332,10 @@
   <footer class="bg-txt-color-28 mb-20 text-white">
     <div class="md:container mx-auto pt-[4rem] flex flex-col justify-center items-center">
       <div class="flex justify-center flex-row items-center gap-3 mb-4">
-        <i class="fa-solid fa-circle-arrow-up text-bg-color-full rotate-45 text-xl"></i>
+        <i class="fa-solid fa-circle-arrow-up text-bg-color-full rotate-45 text-3xl"></i>
         <a href="" class="text-4xl font-bold">Rinterio</a>
       </div>
-      <p class="text-txt-color-115 text-xl mb-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
-        sleek metal accents.</p>
+      <p class="text-txt-color-115 text-xl mb-4 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
       <div class="navbar-center flex mb-16">
         <ul class="menu menu-horizontal flex flex-row justify-center items-center lg:flex-row gap-x-32 txt-color-233 text-base">
           <li><a href="#" class="font-bold">Home</a></li>
@@ -344,7 +347,7 @@
       </div>
       
       <div class="flex flex-row justify-center items-center ">
-        <a class="text-xl btn border-none bg-bg-color-full rounded-3xl font-bold hover:bg-lime-200 hover:scale-105 transition-all duration-300 flex items-center justify-center">Book Consult<i class="fa-solid fa-circle-arrow-up text-black rotate-45 text-xl"></i></a>
+        <a class="text-xl btn border-none bg-bg-color-full rounded-3xl font-bold hover:bg-lime-200 hover:scale-105 transition-all duration-300 flex items-center justify-center">Book Consult<i class="fa-solid fa-circle-arrow-up text-black rotate-45 text-3xl"></i></a>
       </div>
       <p class="text-txt-color-115 text-base mt-10 text-center mb-10">&copy; Copyright by Rinterio ltd. All Rights Reserved 2024</p>
     </div>
