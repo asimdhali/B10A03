@@ -209,17 +209,17 @@
        <!-- ------ GRID COMPONENT STARTS ------ -->
         <div class="">
           <!-- -------- GRID 1 ------ -->
-          <div class="grid grid-cols-3 border-2 rounded-2xl p-5 gap-y-6">
-            <div class="col-span-2 flex gap-4">
+          <div class="grid grid-cols-3 rounded-2xl p-5 gap-y-6 gap-4 justify-center items-center">
+            <div class="col-span-2 flex gap-4 border-2 rounded-2xl p-5">
               <div class="border-dashed border-[0.13rem] border-txt-color-33 border-opacity-30">
-                <img class="max-w-[16rem]" src="./assets/img1.png" alt="">
+                <img class="max-w-[16rem] " src="./assets/img1.png" alt="">
               </div>
               <div>
-                <h2 class="text-xl font-bold">Commercial</h2>
-                <p class="text-base text-txt-color-73">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with
+                <h2 class="text-xl font-bold mb-4">Commercial</h2>
+                <p class="text-base text-txt-color-73 mb-4">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with
                   its blend of rustic charm and modern .</p>
                 <button
-                  class="flex justify-center items-center box-border font-semibold text-lg">
+                  class="flex justify-center items-center box-border font-semibold text-lg gap-2">
                   View Details
                   <i
                     class="fa-solid fa-arrow-right w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2 bg-bg-color-full"></i>
@@ -227,32 +227,41 @@
               </div>
             </div>
 
-            <div class="border-dashed border-[0.13rem] border-txt-color-33 border-opacity-30">
-              <img src="./assets/img2.png" alt="">
+            <div class="border-2 rounded-2xl p-5">
+              <figure class="border-dashed border-[0.13rem] border-txt-color-33 border-opacity-30">
+                <img class="w-full h-full object-cover" src="./assets/img2.png" alt="">
+              </figure>
             </div>
 
-            <div >
-              <img  src="./assets/img3.png" alt="">
-            </div>
-
-            <div class="flex">
-              <div>
-                <img class="max-w-[20rem]"  class="" src="./assets/img4.png" alt="">
+            <!-- -------- SECOND ROW ------ -->
+            <div class="col-span-3 grid grid-cols-12 gap-4 justify-center items-center">
+              <div class="col-span-2 border-2 rounded-2xl p-5">
+                <figure class="border-dashed border-[0.13rem] border-txt-color-33 border-opacity-30">
+                  <img class="max-w-[13rem]" src="./assets/img3.png" alt="">
+                </figure>
               </div>
-              <div>
-                <h1>Commercial</h1>
-                <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with
-                  its blend of rustic charm and modern .</p>
-                  <button class="flex justify-center items-center box-border font-semibold text-lg">
+
+              <div class="flex gap-4 col-span-6 border-2 rounded-2xl p5">
+                <div class="border-dashed border-[0.13rem] border-txt-color-33 border-opacity-30">
+                  <img class="max-w-[16rem]" src="./assets/img4.png" alt="">
+                </div>
+                <div>
+                  <h2 class="text-xl font-bold mb-4">Commercial</h2>
+                  <p class="text-base text-txt-color-73 mb-4">The barn house captivates with its blend of rustic charm
+                    and
+                    modern. The barn house captivates with
+                    its blend of rustic charm and modern .</p>
+                  <button class="flex justify-center items-center box-border font-semibold text-lg gap-2">
                     View Details
                     <i
                       class="fa-solid fa-arrow-right w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2 bg-bg-color-full"></i>
                   </button>
+                </div>
               </div>
-            </div>
 
-            <div>
-              <img src="./assets/img5.png" alt="">
+              <div class="col-span-4">
+                <img src="./assets/img5.png" alt="">
+              </div>
             </div>
           </div>
         </div>
