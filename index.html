@@ -41,6 +41,7 @@
               'txt-color-33': 'rgb(33, 33, 33)',
               'txt-color-115': 'rgb(115, 115, 115)',
               'txt-color-28': 'rgb(28, 28, 28)',
+              'txt-color-233': 'rgb(233, 233, 233)',
 
               'card-bg-1': 'rgb(231, 193, 211)',
               'card-bg-2': 'rgb(239, 218, 110)',
@@ -91,12 +92,11 @@
         <div class="navbar-end gap-2 max-sm:hidden flex justify-center items-center">
           <i class="fa-solid text-xl fa-magnifying-glass border-[0.06rem] border-[rgb(233,233,233)]  rounded-full px-3 py-2"></i>
           <i class="fa-solid fa-cart-shopping border-[0.06rem] border-[rgb(233,233,233)]  rounded-full px-3 py-3"></i>
-          <button
-            class="flex justify-center items-center border-bg-color-full rounded-full bg-bg-color-full gap-3 text-xl font-bold pl-3 pt-1 pb-1">
-            Book Consult
-            <i
-              class="fa-solid fa-arrow-right bg-black text-white w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2"></i>
-          </button>
+          <div class="flex flex-row justify-center items-center ">
+            <a
+              class="text-xl btn border-none bg-bg-color-full rounded-3xl font-bold hover:bg-lime-200 hover:scale-105 transition-all duration-300 flex items-center justify-center">Book
+              Consult<i class="fa-solid fa-circle-arrow-up text-black rotate-45 text-xl"></i></a>
+          </div>
         </div>
 
         <div class="max-sm:flex lg:hidden bg-white border-[0.06rem] border-white rounded-full p-4">
@@ -313,9 +313,9 @@
              class="block lg:col-span-2 w-full rounded-3xl border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inse name="
              id="" cols="30" rows="10"></textarea>
 
-           <button class="text-xl font-bold lg:col-span-2 bg-bg-color-full py-1 my-3 w-full rounded-full">
+           <button class="text-2xl font-bold lg:col-span-2 bg-bg-color-full py-3 my-3 w-full rounded-full mt-6 mb-12">
              Send Mail
-             il<i class="fa-solid fa-circle-arrow-up text-black px-3 rotate-45 text-xl"></i>
+             <i class="fa-solid fa-circle-arrow-up text-black px-3 rotate-45 text-xl"></i>
            </button>
          </form>
        </div>
@@ -326,30 +326,28 @@
 
   <!-- ======== FOOTER SECTION ======== -->
   <footer class="bg-txt-color-28 mb-20 text-white">
-    <div class="md:container mx-auto pt-[6rem]">
-      <div>
-        <a href="">Rinterio</a>
+    <div class="md:container mx-auto pt-[4rem] flex flex-col justify-center items-center">
+      <div class="flex justify-center flex-row items-center gap-3 mb-4">
+        <i class="fa-solid fa-circle-arrow-up text-bg-color-full rotate-45 text-xl"></i>
+        <a href="" class="text-4xl font-bold">Rinterio</a>
       </div>
-      <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+      <p class="text-txt-color-115 text-xl mb-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
         sleek metal accents.</p>
-      <div>
-        <ul>
-          <li><a href="Home"></a></li>
-          <li><a href="Home"></a></li>
-          <li><a href="Home"></a></li>
-          <li><a href="Home"></a></li>
-          <li><a href="Home"></a></li>
+      <div class="navbar-center flex mb-16">
+        <ul class="menu menu-horizontal flex flex-row justify-center items-center lg:flex-row gap-x-32 txt-color-233 text-base">
+          <li><a href="#" class="font-bold">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <button
-        class="flex justify-center items-center border-bg-color-full rounded-full bg-bg-color-full gap-3 text-xl font-bold pl-3 pt-1 pb-1">
-        Book Consult
-        <i
-          class="fa-solid fa-arrow-right bg-black text-white w-[30px] h-[30px] flex justify-center items-center -rotate-45 rounded-full mr-2"></i>
-      </button>
+      
+      <div class="flex flex-row justify-center items-center ">
+        <a class="text-xl btn border-none bg-bg-color-full rounded-3xl font-bold hover:bg-lime-200 hover:scale-105 transition-all duration-300 flex items-center justify-center">Book Consult<i class="fa-solid fa-circle-arrow-up text-black rotate-45 text-xl"></i></a>
+      </div>
+      <p class="text-txt-color-115 text-base mt-10 text-center mb-10">&copy; Copyright by Rinterio ltd. All Rights Reserved 2024</p>
     </div>
-    
-    
   </footer>
   <!-- ================ -->
 </body>
