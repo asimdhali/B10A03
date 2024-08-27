@@ -51,6 +51,18 @@
         }
       }
     </script>
+
+    <style>
+      .bg-image{
+        background-image: url('./assets/bg.jpg');
+      }
+
+      .h2-style{
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+      }
+    </style>
 </head>
 <body class="font-manrope">
   <!-- ======== HEADER SECTION ======== -->
@@ -270,18 +282,19 @@
     <!-- ===== LATEST PORTFOLIO ENS ===== -->
 
     <!-- LETS CONNECT SECTION STARTS  -->
-     <section>
-      <div>
+     <section class="bg-[url('assets/bg.jpg')] bg-cover bg-no-repeat">
+      <div class="container mx-auto flex flex-col justify-center items-center">
         <div>
-          <a href="">
+          <a href="" class="bg-bg-color-o-2 h2-style">
+            <i class="fa-solid fa-arrow-right"></i>
             Let's Connect
           </a>
         </div>
-        <h2>Let’s Discuss Next Project</h2>
-        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <h2 class="text-2xl font-bold text-center">Let’s Discuss Next Project</h2>
+        <p class="text-txt-color-73 text-xl mb-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
       </div>
-      <form action="">
-        <input type="text">
+      <form action="" class="container grid grid-cols-1 lg:grid-cols-2 place-items-center place-content-center gap-2">
+        <input type="text" >
         <input type="text">
         <input type="text">
         <input type="text">
